@@ -1,4 +1,5 @@
 function customrender(reactElement,container){
+    /*
     const domElement=document.createElement(reactElement.type)
     domElement.innerHTML=reactElement.children
     document.setAttribute('href',reactElement.props.href)
@@ -6,7 +7,7 @@ function customrender(reactElement,container){
 
     container.appendChild(domElement)
     
-    /*
+    */
     const domElement=document.createElement(reactElement.type)
     domElement.innerHTML=reactElement.children
     for(const prop in reactElement.props){
@@ -14,7 +15,7 @@ function customrender(reactElement,container){
         document.setAttribute(prop,reactElement.props[prop])
     }
     container.appendChild(domElement)
-    */
+    
 }
 
 const reactElement = {
